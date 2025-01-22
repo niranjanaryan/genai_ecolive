@@ -1,0 +1,46 @@
+---
+import "./footer.css";
+const year = new Date().getFullYear();
+const { title } = Astro.props;
+---
+
+<footer>
+  <div class="footer__container">
+    <p class="flex-row">
+      Deceptive Intelligence LLP | &copy; {2021}-{year + 2} All rights reserved.
+    </p>
+  </div>
+  <!-- <div class="footer__link">
+		<p>Engineered in Bengaluru, India with ❤ for Sustainable World</p>
+	</div> -->
+  <aside class="footer__links">
+    <ul>
+      <li>
+        <a class="footer__link" href="mailto:governance@deceptiveai.in">
+          <span>
+            <iconify-icon
+              icon="fluent:mail-28-regular"
+              width="27"
+              height="27"
+              style="color: #dcd8fc"></iconify-icon></span
+          >governance@deceptiveai.in</a
+        >
+      </li>
+      <li>
+        <a
+          class="footer__link"
+          href="https://www.linkedin.com/company/deceptiveai"
+          target="_blank"
+          rel="nofollow noreferrer noopener"
+          ><span
+            ><iconify-icon
+              icon="mdi:linkedin"
+              width="27"
+              height="27"
+              style="color: #dcd8fc"></iconify-icon></span
+          >DeceptiveAI</a
+        >
+      </li>
+    </ul>
+  </aside>
+</footer>

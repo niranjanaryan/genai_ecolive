@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+*.txt
+/lib
+*.json
+rspack.config.ts
+rsbuild.config.ts
